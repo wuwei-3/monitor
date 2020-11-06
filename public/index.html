@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="@/monitor.ico" />
+  <title>数据库监控软件</title>
+</head>
+<script>
+</script>
+
+<body>
+  <div id="app"></div>
+</body>
+<style>
+  /* 滚动条 height 高度不填 否则会影响样式 */
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 2px #6b7886;
+    background: #2b323a;
+  }
+
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px #1c2226;
+    border-radius: 10px;
+  }
+
+  /* 指定页面滚动条 */
+  .awr .e-bot::-webkit-scrollbar {
+    width: 10px;
+    height: 1px;
+  }
+
+  .awr .e-bot::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #f90;
+    background-image: -webkit-linear-gradient(45deg,
+      rgba(255, 255, 255, 0.2) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, 0.2) 50%,
+      rgba(255, 255, 255, 0.2) 75%,
+      transparent 75%,
+      transparent)
+  }
+
+  .awr .e-bot::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.2);
+    background: #ededed;
+  }
+
+  /*  数据库巡检报告 */
+  .dbreport .e-bot::-webkit-scrollbar {
+    width: 10px;
+    height: 1px;
+  }
+
+  .dbreport .e-bot::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #f90;
+    background-image: -webkit-linear-gradient(45deg,
+      rgba(255, 255, 255, 0.2) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, 0.2) 50%,
+      rgba(255, 255, 255, 0.2) 75%,
+      transparent 75%,
+      transparent)
+  }
+
+  .dbreport .e-bot::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.2);
+    background: #ededed;
+  }
+
+  .el-popup-parent--hidden {
+    padding-right: 0 !important;
+  }
+
+  /* 添加所有按钮 input框圆角 */
+  .el-button {
+    font-size: 12px;
+    border-radius: 2px !important
+  }
+
+  .el-input__inner {
+    border-radius: 2px !important
+  }
+
+  /* 弹出ip框样式 */
+  .e-san {
+    top: 35px !important
+  }
+
+  .t-details {
+    right: -1px !important;
+    top: 34px !important
+  }
+
+  .el-dialog__header .el-dialog__title {
+    font-weight: bold !important;
+    color: #333333 !important;
+  }
+
+  .el-dialog__header {
+    background: #f8f8f8 !important;
+  }
+
+  .el-dialog__header .el-dialog__headerbtn .el-dialog__close {
+    color: #343232 !important;
+    font-weight: bold !important;
+    font-size: 18px !important;
+  }
+
+  .el-dialog__body {
+    padding: 10px !important;
+  }
+</style>
+
+</html>
